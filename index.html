@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style></style>
+    :
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!---->
+    <h2>You have clicked <span id="count">0</span> times</h2>
+
+    <button id="inc">increment</button>
+    <button id="dec">decrement</button><br />
+    <button id="rec">Recover</button>
+
+    <!---->
+    <div id="app"></div>
+
+    <script src="src/index.js"></script>
+    <script>
+      document.getElementById("inc").addEventListener("click", myIncrement);
+      document.getElementById("dec").addEventListener("click", myDecrement);
+      document.getElementById("rec").addEventListener("click", myRecover);
+      function myIncrement() {
+        var count = document.getElementById("count").innerHTML;
+        console.log(count);
+        count = Number(count);
+        count++;
+        document.getElementById("count").innerHTML = count;
+      }
+      function myDecrement() {
+        var count = document.getElementById("count").innerHTML;
+        var count = Number(count);
+        count--;
+        document.getElementById("count").innerHTML = count;
+      }
+      function myRecover() {
+        document.getElementById("count").innerHTML = 0;
+      }
+    </script>
+  </body>
+</html>

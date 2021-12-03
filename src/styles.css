@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+#app {
+  margin-top: 10px;
+  background-color: yellow;
+  text-align: left;
+}
